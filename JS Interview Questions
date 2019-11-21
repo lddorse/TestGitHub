@@ -1,0 +1,218 @@
+JavaScript Interview Questions
+	-history on javascript
+	-salary trends
+	-Companies using JavaScript
+	
+-Created by Brandan Eich in 1995 while working at Netscape. Initially named Mocha
+-JS was conceived of as a scripting language for both client and server side
+-Internet Explorer 3.0 was released with its own version of JS called JScript 
+-95981 is the average salary for a JS developer
+
+1. What is javascript?
+	
+	-JS is an object-oriented computer programming language commonly used to create 	interactive effects within web browser
+	
+	-it allows you to build into otherwise static HTML pages
+	-it language has been embedded in Netscape, Internet Explorer etc
+
+2. What is the difference between Java and JavaScript?
+	
+	-Java is a complete programming language whereas JavaScript is a coded program 		that can be introduced to HTML pages
+	
+	-Java is a object -oriented programming(OOPS) or structured programming language 	like C++ or C whereas Javascript is a client-side scripting language
+
+3. What are the data types supported by JS?
+
+	- Undefined, Null , Boolean, String, Symbol, Number, Object
+
+4. What are the Features of JS?
+
+	1. it is lightweight, interpreted programming language
+	2. it is designed for creating network centric applications 
+	3. it is complementary to and integrated with Java
+	4. it is complementary to and integrated with HTML
+	5. JS is open and cross-platform
+
+5. Is JS a case sensitive language?
+	-Yes JS is case sensitive
+
+6. What are the advantages of JS?
+
+	-Less server interaction
+	-immediate feedback to the visitors
+	-Increased Interactivity
+	-Richer Interfaces
+
+7. How can you create an object in JS?
+
+	var amp = {
+		Name: "Daniel"
+		age: 23
+	 };
+
+8. How can you create an Array in JS?
+
+	var x = [];
+	var y = [1,2,3,4,5];
+
+9. What is a name function in JS & how to define it?
+
+	-a named function has a name when it is defined. It can be defined using function 	keyword as :
+	
+	function named(){
+		//code here
+	}
+10. Can you assign an anonymous function to a variable and pass it as an argument to another function?
+
+	- Yes 
+
+11. What is argument object in JS and how to get the type of arguments passed to a function?
+
+12. What are the scopes of a variable in JS?
+	-local
+	-global
+
+
+13. What is the purpose of 'This' operator in JS?
+
+	-the famous JS keyword 'this' refers to the current context
+
+14. What is Callback?
+
+	-a callback is a plain JS function passed to some method as an argument or option. 	Some callbacks are events that are called to give the user a chance to react when 	a certain state is triggered.
+	
+15. What is Closure ? Give example
+
+	-Closures are created whenever a variable that is defined outside the current 		scope is accessed from within some inner scope
+
+	Function create() {
+		var count = 0;
+		return {
+			increment: function() {
+				count++;
+			},
+			print:function() {
+				console.log(count);
+			}
+		}
+	}
+	var c = create();
+	c.increment();
+	c.print();
+
+16. built in methods
+
+	1. CharAt() - returns the character at the specified index
+	2. Concat() - returns the character at the specified index
+	3. forEach() - it calls a function for each element in the array
+	4. indexOf() - it returns the index within the calling String object of the first 		       occurrence of the specified value.
+	5. length() - returns the length of the string
+	6. pop() - removes the last element from an array and returns that element
+	7. push() - it adds one or more elements to the end of an array and returns the 		    new length of the array
+	8. reverse() - reverses the order of the elements of an array
+
+17.What are the variable naming conventions in JS?
+	
+	1. Do not use any of the JS reserved keywords as variable name.
+	2. JS variable names should not start with a numeral (0-9).
+	3. JS variable names are case sensitive
+
+18. How does TypeOf operator work?
+	
+	- The typeof is a unary operator that is placed before its single operand, which 	  can be any type. Its value is a string indicating the data type of the operand.
+
+19. How to create a cookie using JS?
+
+	- the simplest way to create a cookie is to assign a string value to the 		document.cookie object.
+
+	document.cookie = "key1 = value1; key2 = value2; expires = date";
+
+20. How to read a cookie?
+
+	-Reading a cookie is just as simple as writing one, because the value of the 		document.cookie object is the cookie.
+	
+	- the document.cookie string will keep a list of name = value pairs separated by 	semicolons.
+
+	-you can use the strings' split() function to break the string into key and values
+
+21. How to delete a cookie using JS?
+
+	-If you want to delete a cookie so the subsequent attempt to read the cookie 		return nothing, you just need to set the expiration date to a time in the past.
+
+22. What is the difference between Attributes and Property?
+
+	Attributes - Attributes provide more details on an element like id, type, value 		     etc.
+	Property - Property is the value assigned to the property like 
+		   type = "text",value = 'Name' etc.
+
+23. List out the different ways an HTML element can be accessed in a JS code
+
+	-getElementById('idname')
+	-getElementByClass('classname')
+	-getElementByTagName('tagname')
+	-querySelector()
+
+24. In how many ways can a JS code be involved in an HTML file?
+
+	3 ways
+	-Inline
+	-Internal
+	-External
+
+25. What are the ways to define a variable in JS?
+
+	-Var
+	-Const
+	-let
+
+26. What is a Typed language?
+
+	-Typed language is in which the values are associated with values and not with 		 variable. there are two types:
+		-Dynamically - the variable can hold multiple types
+		-Statically - the varible can hold only one type
+
+27. What is the difference between local storage and session storage?
+
+	- local storage will stay until it is manually cleared through settings or 		  program. Whereas session storage will leave when the browser is closed
+
+28. What is the difference between the operators '==' & '==='?
+
+	-The operator '==' compares the value. Whereas, the operator '===' compares both 	 value and type.
+
+ 29. What is the difference between null & undefined?
+
+	-When the typeof operator is used on null, the value is an object. Whereas, when 	it is used on undefined, the value would be undefined
+
+30. What is the difference between undeclared & undefined?
+
+	-Undeclared variables are those that do not exist in a program and are not 		declared.  Undefined variables are those that are declared in the program but have 	not been given any value
+
+31. Name some of the JS frameworks?
+
+	-there are many JS frameworks but some of the most popular are Angular, React,Vu
+
+32. What is the difference between window & document in JS?
+
+	-Window - JS window is a global object which holds variables, functions, history, 	          location
+	-Document - The document also comes under the window and can be considered as the 		    property of the window.
+
+33. What is the difference between the innerHTML and innerText?
+
+	innerHTML - will process an HTML tag if found in a string
+	innerText - will not process an HTML tag if found in a string
+
+34. What is an event bubbling in JS?
+
+	When an event is fired on an HTML element, the execution starts from that event 	and goes to its parent element. Then the execution passes to its parent element 	and so on till the body element.
+
+35. What is NaN in JS?
+
+	-NaN is a short form of Not a Number. When a string or something else is being 		converted into a number and that cannot be done, then we see the NaN
+
+36. How does Js primitive/object types passed in functions?
+
+	-Primitive types in JS are passed by value. Whereas, object types are passed by 	reference
+
+37. How can you convert the string of any base to integer in JS?
+
+	-

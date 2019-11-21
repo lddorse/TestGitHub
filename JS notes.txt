@@ -1,0 +1,64 @@
+JS NOTES
+ 
+What is JS?
+	-JS is mostly known as client side scripting language. Javascript initially use to 	  make your page alive
+	-At present JS not only execute on browser but also on server
+History of JS?
+	-Develobed by Brendan Each in 1995
+What is ECMAScript?
+	-in 1996 Netscape submitted JS to ECMA
+	-ECMA(European Computer Manufacturers Association) is a private international 		nonprofit standard organization
+	-the relation between ECMA specification
+What is ES6?
+	-ECMAScript 6 is update of ES5 which was standardize in 2009
+	-ES6 was published by ECMA international in June 2015
+
+What is Variables?
+	-If i wanted to simply describe a variable then I would like to say a variable is 	just a name of the specific value
+	
+What is a Constant?
+	-In ES6 a new keyword added in the JS which is const.
+	-Constant also hold value but unlike variables it can't be changed after 		initialization	
+	-wwe cannot change the constant value after you declare it 
+What is Identifier?
+	-Variables and constant are usually called identifiers
+What is Literals?
+	-You are providing a value directly in the program
+ Object types
+	- Array , Date , Regular Expression, Map and WeakMap, and Set and WeakSet
+What is Object?
+	-Objects are mutable
+	-can change any value anytime
+	-object is just like a container that can have different kind of data
+	-object literal syntax:{}
+Array
+	-Is a collection of different types of data
+	-array start with [0] and end with [n] value
+Important features of array
+	-array element can be any type of data. it may be objects or primitive type
+	-array size is not fixed so you can add and remove array elements anytime
+	- arrays are zero based. so the first element of the array is zero then 1 etc.
+Date
+	-dates are represented using the date object
+	-date object used to get date or you can use to set date for a particular event
+	-you can specify time using date of object
+Regular expression
+	-regular expression is sub language of JS
+	-it is used to perform complex search and replace operations on strings
+Maps and sets
+	-in new ECMAScript 6 a new data type introduced is map and set and their week 		counterpart, weak map and weakest
+	--maps are like an object but it offers more advantaged then object in certain 		situations
+	-set are similar to array except they can't content duplicate element
+String 
+	-string is just a simple text data
+	-you can also say string is a collection of characters, numbers and symbols
+	-in JS strings represent Unicode text
+What is Unicode text?
+	-is a computing industrial standard for representing text data
+	-unicode stores letters and characters by assigning a number to each one
+
+Loops
+	-While Loop, DoWhile, forLoop
+
+
+
